@@ -1,0 +1,311 @@
+/* Section - 1 */
+.gsap-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* 確保內容不會溢出 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gsap-container .gsap-section1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.gsap-section1 .title-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gsap-section1 .title-content h1 {
+  font-size: 64px;
+  font-weight: 500;
+  color: #000000;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.gsap-section1 .title-content p {
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--brand-300);
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.gsap-section1 .line-content {
+  margin-top: 105px;
+  width: 100%;
+}
+
+.line-content path {
+  stroke-width: 6px !important;
+}
+
+/* Section - 2 */
+.gsap-section2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* 左邊的圖片區 */
+.card {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+}
+
+.card-1 .card-2 .card-3 {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.title-box {
+  position: absolute;
+  height: 100%;
+  left: 8%;
+  top: 14%;
+  text-align: left;
+  line-height: 60px;
+}
+
+.title-box span {
+  font-size: 48px;
+  font-weight: 500;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+.title-box span:first-of-type {
+  color: var(--brand-300);
+}
+
+.title-box span:last-of-type {
+  color: #000000;
+}
+
+.text-box {
+  position: absolute;
+  height: 100%;
+  width: 620px;
+  left: 8%;
+  top: 60%;
+  text-align: left;
+}
+
+.text-box .features-box {
+  position: absolute;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  line-height: 1;
+}
+
+.text-box .features-box .core-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-box .features-box .core-container h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  margin-block-start: 0em;
+}
+
+.text-box .core-description {
+  font-size: 32px;
+  font-weight: 300;
+  color: #000;
+  line-height: 40px;
+  margin-top: 80px;
+  text-align: left;
+  margin-block-end: 0em;
+}
+
+/* Section - 3 */
+.gsap-section3 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gsap-section3 .gsap-video-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  bottom: 0;
+}
+
+.gsap-section3 .gsap-video-container .video-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.gsap-section3 .gsap-video-container .video-text h2 {
+  font-size: 64px;
+  font-weight: 500;
+  color: white;
+}
+
+.gsap-section3 .gsap-video-container .video-box {
+  width: 1720px;
+  height: 977px;
+  object-fit: cover;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  overflow: hidden;
+}
+
+/* Section - 4 */
+.gsap-section4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100%;
+}
+
+.integrated-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 0;
+}
+
+.integrated-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1263px;
+  margin: 0 auto;
+}
+
+.integrated-text h1 {
+  color: var(--brand-300);
+  font-size: 48px;
+  font-weight: 500;
+  margin-bottom: 64px;
+}
+
+.integrated-text p {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 50px;
+  text-align: center;
+  margin-bottom: 110px;
+}
+
+.integrated-text span {
+  color: var(--brand-300);
+}
+
+.bike {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Section - 5 */
+.gsap-section5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100%;
+}
+
+.application-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  max-width: 1540px;
+  margin: 0 auto;
+}
+
+.application-section .application-title {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.application-title .ribbons-img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.application-section h1 {
+  color: var(--brand-300);
+  font-size: 64px;
+  font-weight: 500;
+  margin-bottom: 34px;
+  margin-block-start: 0em;
+}
+
+.application-section p {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 86px;
+  margin-block-start: 0em;
+}
+
+.application-img {
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+  flex-direction: column;
+}
+
+.img-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}

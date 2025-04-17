@@ -1,0 +1,28 @@
+{%- assign button_text = text | default: 'custom button' -%}
+{%- assign button_link = href | default: '#' -%}
+{%- assign button_size = size | default: 'md' -%}
+
+<!-- Btn icon -->
+{%- assign button_icon = icon | default: 'btn-arrow-icon.svg' -%}
+
+{%- comment -%}
+  使用方式：
+  {% render 'custom-button',
+    href: '#',
+    text: 'Upgrade Your Bike',
+    size: 'lg',
+    class: 'absolute bottom-10 z-10' %}
+{%- endcomment -%}
+
+<button type="button" class="custom_button_style custom_button_{{ button_size }}{% if class %} {{ class }}{% endif %}">
+  <a href="{{ button_link }}" class="custom_button_link custom_button_link_{{ button_size }}">
+    {{ button_text | escape }}
+  </a>
+  <img
+    src="{{ button_icon | asset_url }}"
+    alt="arrow-icon"
+    class="custom_button_icon custom_button_icon_{{ button_size }}"
+    width="24"
+    height="24"
+  />
+</button>

@@ -1,0 +1,62 @@
+{% assign hero_video = 'https://cdn.shopify.com/videos/c/o/v/6b04454926084a6180a77cb1838c5d41.mp4' %}
+{% assign hero_logo = 'homepageHero-logo.png' | asset_url %}
+{{ 'homepage-hero.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .btn-fixed-style {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    z-index: 10;
+  }
+</style>
+
+<div class="hero-container">
+  <div class="video-container">
+    <div class="title-box">
+      <h2>{{ section.settings.homepage_h2_text }}</h2>
+      <p>{{ section.settings.homepage_p_text }}</p>
+    </div>
+
+    <div class="eCore-logo">
+      <img src="{{ hero_logo }}" alt="eCore-logo" width="448" height="246">
+    </div>
+
+    <video width="auto" height="100%" autoplay playsinline muted>
+      <source src="{{ hero_video }}" type="video/mp4" />
+    </video>
+
+    {% render 'custom-button', href: '/#', text: 'Upgrade Your Bike', size: 'lg', class: 'btn-fixed-style' %}
+
+    <!-- <button class="upgrade-btn">
+      <a href="#" class="upgrade-link">
+        Upgrade Your Bike
+      </a>
+    </button> -->
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Homepage Hero",
+    "settings": [
+      {
+      "type": "text",
+      "id": "homepage_h2_text",
+      "label": "Homepage H2 Text",
+      "default": "The Feeling Stays. The Limits Go."
+    },
+    {
+      "type": "textarea",
+      "id": "homepage_p_text",
+      "label": "Homepage P Text",
+      "default": "The best eBike Kit for the City and Beyond"
+    }
+    ],
+    "presets": [
+      {
+        "name": "Homepage Hero Section"
+      }
+    ]
+  }
+{% endschema %}

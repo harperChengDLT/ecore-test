@@ -1,0 +1,124 @@
+.footer-container {
+  height: 600px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray-200);
+}
+
+.footer-container .footer-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 100px;
+  height: 100%;
+}
+
+/* footer-nav */
+.footer-box .footer-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-nav .footer-logo {
+  margin-right: 189px;
+}
+
+.footer-box .footer-menus {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+}
+
+.footer-box .footer-menus li {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-box .footer-menus a {
+  text-decoration: none;
+  color: var(--gray-900);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* footer-content */
+.footer-content .footer-newsletter {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.footer-newsletter .newsletter-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.newsletter-form .newsletter-input {
+  width: 398px;
+  height: 53px;
+  border: 1.3px solid var(--gray-400);
+  background-color: transparent;
+  border-radius: 50px;
+  margin-right: 12px;
+  padding: 0 20px;
+  font-size: 18px;
+}
+
+.newsletter-form .newsletter-button {
+  padding: 0px 30px;
+  height: 53px;
+  border-radius: 50px;
+  background-color: var(--brand-300);
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.newsletter-button span {
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-content .footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--gray-400);
+  display: block;
+  margin-top: 50px;
+}
+
+.footer-content .footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.footer-links .policy-conditions {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+}
+
+.footer-links .policy-conditions a {
+  text-decoration: none;
+  color: var(--gray-900);
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.footer-links .social-icons {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 24px;
+}

@@ -1,0 +1,64 @@
+{% assign front_comma = 'Front-comma.svg' | asset_url %}
+{% assign end_comma = 'End-comma.svg' | asset_url %}
+
+{%- style -%}
+  .intro-container {
+    height: 560px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro-container .text-container {
+    width: 1500px;
+    height: auto;
+  }
+
+  .text-container .comma-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .highlight {
+    color: #0BC6FF;
+  }
+
+  .intro-container .text-container h2 {
+    color: #002850;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    margin: 0;
+    text-align: center;
+    padding: 0 20px;
+  }
+{%- endstyle -%}
+
+<div class="intro-container">
+  <div class="text-container">
+    <div class="comma-container">
+      <img src="{{ front_comma }}" alt="comma-icon" width="48" height="24">
+      <img src="{{ end_comma }}" alt="comma-icon" width="48" height="24">
+    </div>
+
+    <h2>
+      Transform your beloved bike into an electric companion with
+      <span class="highlight">eCore's</span>
+      hassle-free upgrade. Perfect for city commuters, weekend adventurers, and road cycling enthusiasts.
+    </h2>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "homepage intro",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Homepage Intro Section"
+      }
+    ]
+  }
+{% endschema %}

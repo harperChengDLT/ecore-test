@@ -1,0 +1,178 @@
+<!-- Section - 2 -->
+{% assign coreDrive-img = 'coreDrive-img.png' | asset_url %}
+{% assign powerCore-img = 'powerCore-img.png' | asset_url %}
+{% assign rideCore-img = 'rideCore-img.png' | asset_url %}
+{% assign coreDrive-icon = 'coreDrive-icon.png' | asset_url %}
+{% assign powerCore-icon = 'powerCore-icon.png' | asset_url %}
+{% assign rideCore-icon = 'rideCore-icon.png' | asset_url %}
+<!-- Section - 3 -->
+{% assign install-video = 'https://cdn.shopify.com/videos/c/o/v/6b04454926084a6180a77cb1838c5d41.mp4' %}
+<!-- Section - 4 -->
+{% assign bike-img = 'bike-img.png' | asset_url %}
+<!-- Section - 5 -->
+{% assign ribbons-img = 'ribbons-img.svg' | asset_url %}
+{% assign city-img = 'city-img.png' | asset_url %}
+{% assign road-img = 'road-img.png' | asset_url %}
+{% assign sport-img = 'sport-img.png' | asset_url %}
+
+{{ 'homepage-animated.css' | asset_url | stylesheet_tag }}
+
+<style>
+  .btn-style {
+    margin-top: 20px;
+  }
+</style>
+
+<div class="gsap-container" id="containerRef">
+    <!-- Section - 1 -->
+    <section class="gsap-section1">
+      <div class="title-content" id="titleRef">
+        <p>3-2-1-GO!</p>
+        <h1>Transform Your Ride in Minutes</h1>
+      </div>
+      <div class="line-content">
+        <svg
+          width="1920"
+          height="140"
+          viewBox="0 0 1920 140"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id="pathRef"
+            d="M0 137C27.9563 117.245 69.5881 92.3169 138.45 73.7824C254.895 42.4409 376.841 26.1328 496.779 14.5161C654.78 -0.787366 822.501 -2.69763 979.802 20.2232C1045.21 29.754 1109.33 40.1131 1171.28 63.6852C1183.09 68.1805 1202.63 74.9817 1197.9 91.3429C1192.53 109.971 1166.56 98.9599 1160.19 87.6113C1144.37 59.4486 1255.47 34.7428 1270.01 33.3935C1396.62 21.6512 1504.13 43.5268 1629.23 59.7341C1708.65 70.0237 1783.22 72.3861 1861.53 54.905C1921.2 41.5848 1920 33.3935 1920 33.3935"
+            stroke="#0BC6FF"
+            strokeWidth="6"
+            strokeLinecap="round"
+          />
+        </svg>
+      </div>
+    </section>
+  
+    <!-- Section - 2 -->
+    <section class="gsap-section2">
+      <div class="title-box" id="titleBoxRef">
+        <span>3 Core</span>
+        <br />
+        <span>Components</span>
+      </div>
+
+      <!-- 左側圖片 -->
+      <div class="card card-1" id="card1Ref">
+        <img src="{{ coreDrive-img }}" alt="CoreDrive-img" width="1000" height="1080">
+      </div>
+      <div class="card card-2" id="card2Ref">
+        <img src="{{ powerCore-img }}" alt="PowerCore-img" width="1000" height="1080">
+      </div>
+      <div class="card card-3" id="card3Ref">
+        <img src="{{ rideCore-img }}" alt="RideCore-img" width="1000" height="1080">
+      </div>
+
+      <!-- 右側文字 -->
+      <div class="text-box" id="text1Ref">
+        <div class="features-box">
+          <div class="core-container">
+            <img src="{{ coreDrive-icon }}" alt="CoreDrive-icon" width="40" height="40">
+            <h2>CoreDrive</h2>
+          </div>
+          <p class="core-description">
+            Our hub motor integrated seamlessly into the rear wheel
+          </p>
+        </div>
+      </div>
+      
+      <div class="text-box" id="text2Ref">
+        <div class="features-box">
+          <div class="core-container">
+            <img src="{{ powerCore-icon }}" alt="PowerCore-icon" width="40" height="40">
+            <h2>PowerCore</h2>
+          </div>
+          <p class="core-description">
+            Sleek, removable battery that clicks on securely to your frame
+          </p>
+        </div>
+      </div>
+      
+      <div class="text-box" id="text3Ref">
+        <div class="features-box">
+          <div class="core-container">
+            <img src="{{ rideCore-icon }}" alt="RideCore-icon" width="40" height="40">
+            <h2>RideCore</h2>
+          </div>
+          <p class="core-description">
+            Proprietary app that puts control and customization at your fingertips
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section - 3 -->
+    <section class="gsap-section3">
+      <div class="gsap-video-container">
+        <div class="video-text" id="videoTextRef">
+          <h2>2 Minutes to Install</h2>
+        </div>
+        <div class="video-box">
+          <video id="videoRef" width="auto" height="100%" muted>
+            <source src="{{ install-video }}" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Section - 4 -->
+    <section class="gsap-section4">
+      <div class="integrated-section">
+        <div class="integrated-text" id="integratedRef">
+          <h1>1 Integrated System</h1>
+          <p>
+            Unlike other kits with messy cables and mismatched components,
+            <span>eCore</span>
+            is designed as a single integrated system where everything
+            works together perfectly. 
+          </p>
+        </div>
+        <img id="bikeRef" class="bike" src="{{ bike-img }}" alt="Bike-img" width="1276" height="740">
+      </div>
+    </section>
+    
+    <!-- Section - 5 -->
+    <section class="gsap-section5">
+      <div class="application-section">
+        <div class="application-title">
+          <img id="ribbonsRef" class="ribbons-img" src="{{ ribbons-img }}" alt="ribbons-img" width="414" height="77">
+          <h1 id="goRef">GO!</h1>
+        </div>
+        <p id="goDescRef">
+          Choose eCore GO for your daily city commute or eCore ULTRA when your road adventures take you beyond the urban limits.
+        </p>
+        <div id="applicationsRef" class="application-img">
+          <div class="img-grid">
+            <img src="{{ city-img }}" alt="City-img" width="386" height="570">
+            <img src="{{ road-img }}" alt="Road-img" width="386" height="570">
+            <img src="{{ sport-img }}" alt="Sport-img" width="386" height="570">
+          </div>
+          {% render 'custom-button', href: '/#', text: 'See Why Riders Choose GO', size: 'lg', class: 'btn-style' %}
+          <!-- <button class="riders-button">
+            <a href="#" class="riders-link">
+              See Why Riders Choose GO
+            </a>
+          </button> -->
+        </div>
+      </div>
+    </section>
+</div>
+
+<script src="{{ 'homepage-animated.js' | asset_url }}" defer></script>
+
+{% schema %}
+  {
+    "name": "Homepage animated",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Homepage Animated Section"
+      }
+    ]
+  }
+{% endschema %}
